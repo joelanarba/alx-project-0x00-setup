@@ -1,21 +1,9 @@
 import React from "react";
 import { ButtonProps } from "@/interfaces";
 
-const sizeClasses = {
-  small: "px-3 py-1 text-sm",
-  medium: "px-4 py-2 text-base",
-  large: "px-5 py-3 text-lg",
-};
-
-const Button: React.FC<ButtonProps> = ({
-  title,
-  size = "medium",
-  shape = "rounded-md",
-}) => {
+const Button: React.FC<ButtonProps> = ({ title, styles }) => {
   return (
-    <button
-      className={`bg-blue-600 text-white ${sizeClasses[size]} ${shape} hover:bg-blue-700 transition duration-200`}
-    >
+    <button className={`bg-blue-600 text-white ${styles} hover:bg-blue-700 transition duration-200`}>
       {title}
     </button>
   );

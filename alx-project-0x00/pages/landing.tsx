@@ -14,9 +14,9 @@ export default function Landing() {
 
       {/* Buttons with different sizes and shapes */}
       <div className="mt-6 space-y-4">
-        <Button title="Small Rounded-sm" size="small" shape="rounded-sm" />
-        <Button title="Medium Rounded-md" size="medium" shape="rounded-md" />
-        <Button title="Large Rounded-full" size="large" shape="rounded-full" />
+        <Button title="Small Rounded-sm" styles="text-sm px-3 py-1 rounded-sm" />
+        <Button title="Medium Rounded-md" styles="text-base px-4 py-2 rounded-md" />
+        <Button title="Large Rounded-full" styles="text-lg px-5 py-3 rounded-full" />
       </div>
     </div>
   );
